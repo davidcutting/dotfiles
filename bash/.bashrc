@@ -12,4 +12,4 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
-export PS1="\u@\h:[\w]\\$ \[$(tput sgr0)\]"
+export PS1="\u@\h:\w\\$ \[$(tput sgr0)\]"

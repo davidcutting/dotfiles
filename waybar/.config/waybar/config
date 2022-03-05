@@ -1,0 +1,31 @@
+{
+    "layer": "bottom",
+    "height": 34,
+    "spacing": 0,
+    "margin-top": 4,
+
+    "modules-left": ["river/tags"],
+    "modules-right": ["tray", "clock#date", "clock"],
+
+    "river/tags": {
+        "num-tags": 6,
+        "tag-labels": [
+            "0", "1", "2", "3", "4", "5",
+        ]
+    },
+
+    "tray": {
+        "icon-size": 21,
+        "spacing": 5
+    },
+
+    "clock": {
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "format": "{:%I:%M %p}",
+    },
+
+    "clock#date": {
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "format": "{:%B %d, %A}",
+    },
+}

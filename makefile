@@ -1,5 +1,6 @@
 pkgs_root = global
 pkgs_home = git ssh bash \
+	    river foot waybar \
 	    wallpaper
 
 simulate :

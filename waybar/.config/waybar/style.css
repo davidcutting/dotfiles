@@ -1,0 +1,110 @@
+#battery, #cpu, #disk, #idle_inhibitor, #keyboard-state,
+#pulseaudio, #clock, #tags, #language, #memory, #network, #sndio,
+#mode, #window, #workspaces, #temperature, #taskbar, #workspaces {
+  box-shadow: 4px 4px 0 #2e2e2e;
+  margin-bottom: 4px;
+  margin-right: 4px;
+  margin-left: 3px;
+  margin-right: 7px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background: #464646;
+  border-radius: 0px;
+}
+
+* {
+  min-height: 0;
+}
+
+window#waybar {
+  background: transparent;
+  color: #a9b665;
+}
+
+.modules-left, .modules-center, .modules-right {
+  background: transparent;
+  margin-top: 0px;
+  border-radius: 0px;
+  font-family: "JetBrains Mono Nerd Font", monospace;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.modules-left {
+  margin-left: 2px;
+}
+
+.modules-right {
+  margin-right: 2px;
+}
+
+#tags button {
+  color: #787878;
+  font-family: "Source Han Sans JP";
+  font-weight: 700;
+  padding: 0 6px;
+  margin: 0 2px;
+  min-width: 26px;
+  font-size: 17px;
+  border-radius: 0;
+  border: none;
+  transition: none;
+}
+
+#tags button.occupied {
+  color: inherit;
+}
+
+#tags button:hover {
+  color: #464646;
+  background: #787878;
+  box-shadow: none;
+  text-shadow: none;
+  transition: 0;
+}
+
+#tags button.focused {
+  color: #464646;
+  background: #a9b665;
+}
+
+#tags button.urgent {
+  color: #ea6962;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+tooltip {
+  background: #464646;
+  border-radius: 7px;
+  font-family: "JetBrains Mono Nerd Font", monospace;
+  font-weight: 500;
+  font-size: 15px;
+  padding: 20px;
+  animation-name: fadein;
+  animation-duration: 0.2s;
+  border: 2px solid #787878;
+  text-shadow: none;
+  color: #a9b665;
+}
+
+tooltip label {
+  color: #a9b665;
+}
+
+#tray menu {
+  background: #464646;
+  color: #a9b665;
+  border-radius: 5px;
+  border: 2px solid #787878;
+  padding: 4px 0;
+  font-family: "JetBrains Mono Nerd Font", monospace;
+  font-weight: 500;
+  font-size: 15px;
+}

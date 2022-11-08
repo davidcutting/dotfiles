@@ -1,6 +1,9 @@
 pkgs_root = global
-pkgs_home = git ssh bash \
-	    wallpaper
+pkgs_home = git ssh bash wallpaper
+mini_pkgs_home = git ssh bash
+
+minimal :
+	stow -v -S -t ~ $(mini_pkgs_home)
 
 simulate :
 	stow -v -n -t ~ $(pkgs_home)
